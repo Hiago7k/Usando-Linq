@@ -7,4 +7,10 @@ List<int> listaunica = new List<int>
 };
 
 
-var listaComNumeroUnico = listaunica.
+var listaComNumeroUnico = listaunica.Where(listaunica => listaunica.Equals(2)).ToList();
+
+
+foreach (var numero in listaComNumeroUnico) 
+{
+    Console.WriteLine($"Numero escolhido: {numero}");
+}
